@@ -3,6 +3,7 @@
 *::before {
   border: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -18,8 +19,16 @@
   --fs-medium: 2.25rem;
   --fs-small: 1.5rem;
   --fs-xsmall: 1.125rem;
+
+  /*Media queries viewport width*/
+  --xs-w: 480px;
+  --m-w: 768px;
+  --l-w: 1024px;
+  --xl-w: 1444px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--col-primary);
+  background-color: var(--col-secondary);
 }
