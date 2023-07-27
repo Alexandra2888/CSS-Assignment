@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
-    <title>Css Assignment</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="crypto.html">Cryptocurrencies</a>
-        <a href="./pages/news/news.html">News</a>
-      </nav>
-    </header>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+              rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+              rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+              rel="stylesheet" />
+        <link rel="stylesheet" href="Home.css" />
+        <title>Css Assignment</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h1 class="nav__logo">Cryptos</h1>
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#section--1">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#section--2">Cryptos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="./pages/news/news.html">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__title">
+                <div>
+                    <h2>Welcome to cryptos</h2>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor quia quibusdam doloremque,</h5>
+                    <button class="btn">Sign up</button>
+                </div>
+                <img src="images/crypto.jpg" class="header__img" alt="main header image" />
+            </div>
+        </header>
+        <main>
+            <section class="info">
+                <h3>Have an idea of our services</h3>
+                <div class="info_cards">
+                    <article>
+                        <img src="images/service1.png" width="64" alt="service 1" />
+                        <h3>SERVICE I</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci error repellendus aperiam quidem.</p>
+                    </article>
+                    <article>
+                        <img src="images/service2.png" width="64" alt="service 2" />
+                        <h3>SERVICE II</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci error repellendus aperiam quidem.</p>
+                    </article>
+                    <article>
+                        <img src="images/service3.png" width="64" alt="service 3" />
+                        <h3>SERVICE III</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci error repellendus aperiam quidem.</p>
+                    </article>
+                    <article>
+                        <img src="images/service4.png" width="64" alt="service 4" />
+                        <h3>SERVICE IV</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci error repellendus aperiam quidem.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore mollitia sequi dolore, cum velit illo sint ipsam eos adipisci incidunt perferendis accusantium
+                    </p>
+                </div>
+                <p class="author">Author</p>
+            </section>
+            <section class="action">
+                <div>
+                    <div class="action_signup">
+                        <p>Call to action it's time!</p>
+                        <p class="action_detail">Sign up for our product by clicking that button right over there!</p>
+                    </div>
+                    <button class="btn_action">Sign up</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">
+                &copy; Copyright by
+                <a class="footer__link" target="_blank" href="#">KreativStorm 2023</a>.
+            </p>
+        </footer>
+    </body>
 </html>
