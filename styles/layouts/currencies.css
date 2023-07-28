@@ -1,4 +1,4 @@
-.textBlock {
+.container__title {
   display: flex;
   justify-content: space-between;
   width: 60vw;
@@ -7,85 +7,39 @@
   background-color: #eef0f3;
   padding: 20px;
 }
-.parentBlock {
-  /* display: flex; */
-  width: 100%;
-  /* justify-content: center; */
-}
 .block {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.card {
-  width: 300px;
+
+.block .card {
+  width: 250px;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
 }
-.card__header {
+.card .card__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.card__title {
+.card .card__title {
   font-size: 18px;
   font-weight: bold;
 }
-.card__icon {
+.card .card__icon {
   width: 50px;
   height: 50px;
 }
-.card__divider {
+.card .card__divider {
   width: 100%;
   height: 1px;
   margin-top: 10px;
   background-color: #eef0f3;
 }
-.card__text {
+.card .card__text {
   font-weight: 200;
 }
-
-@media screen and (min-width: 760px) {
-  .block {
-    grid-template-columns: auto auto auto;
-    gap: 40px;
-  }
-}
-@media screen and (min-width: 1560px) {
-  .block {
-    grid-template-columns: auto auto auto auto;
-    gap: 40px;
-  }
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-
-  /* .column img {
-  margin-top: 8px;
-  vertical-align: middle; */
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-} */
