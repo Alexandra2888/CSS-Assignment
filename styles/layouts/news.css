@@ -11,6 +11,7 @@
   background-color: var(--col-primary);
   box-shadow: 1px 1px 1px 1px rgb(192, 190, 190);
   cursor: pointer;
+  color: var(--col-dark);
 }
 
 .news-article__main {
@@ -38,10 +39,12 @@
   font-size: var(--fs-xsmall);
 }
 
+
 .news-container .news-input {
   display: flex;
   justify-content: center;
   padding-top: 3.125rem;
+  color: var(--col-dark);
 }
 
 .news-container .news-section {
