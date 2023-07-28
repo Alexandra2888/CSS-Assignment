@@ -86,6 +86,27 @@ img {
 
 
 
+.view__btn {
+  transition: all .5s ease;
+  color: var(--col-action);
+  border: 3px solid var(--col-action);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+
+.view__btn:hover, .view__btn:active {
+  color: var(--col-secondary);
+  background-color: var(--col-action);
+}
+
+
 /*Media queries*/
 
 @media screen and (min-width: 768px) {
