@@ -1,82 +1,42 @@
-
-
-
-/* GENERAL ELEMENTS */
-
-
-.btn {
-  background-color: var(--col-action);
-  color:var(--col-secondary) ;
-  font-size: 1.7rem;
-  font-weight: 500;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px 40px;
-}
-
-.btn_action {
-  background-color: var(--col-action);
-  color:var(--col-secondary) ;
-  font-size: 1.5rem;
-  border: 3px solid var(--col-secondary);
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 40px 0;
-  padding: 5px 35px;
-}
-
-p {
-  color:var(--col-dark);
-}
-
-h2 {
-  font-size: 2.8rem;
-  line-height: 1.4;
-}
-
-h4 {
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-
-
-/* info section */
-.info_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.info_cards article {
-  text-align: center;
-  background-color:transparent;
-  border: 4px transparent;
-  border-radius: 20px;
-  padding: 5px;
-  width: 12%;
-  margin-bottom: 30px;
-  color:var(--col-dark);
-  font-size: 14px;
-}
-.info_cards article:hover{
-  transform: scale(110%);
-  transition: 0.7s;
-}
-
-section.info {
+/* INFO SERVICES */
+.information__services {
   padding: 4rem 2rem;
 }
 
-section.info> h3 {
+.information__services > h3 {
   text-align: center;
   padding-bottom: 40px;
   color: var(--col-dark);
   font-weight: bolder;
   font-size: 36px;
 }
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.services__cards article {
+  text-align: center;
+  border: 4px transparent;
+  border-radius: 20px;
+  padding: 5px;
+  width: 12%;
+  margin-bottom: 30px;
+  color: var(--col-dark);
+  font-size: 14px;
+}
+.services__cards article:hover {
+  transform: scale(110%);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.service__title {
+  margin: 5px;
+}
 
 /* QUOTE SECTION */
-section.quote {
+.quote {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,49 +44,130 @@ section.quote {
   background-color: var(--col-primary);
   padding: 4rem 6rem;
 }
-section.quote div{
+.quote__text {
   width: 65%;
-  font-size:36px ;
+  font-size: 36px;
   font-style: italic;
   color: var(--col-dark);
 }
-section.quote .author{
+.author {
   margin-left: 500px;
+  margin-top: 20px;
   font-size: 24px;
+  color: var(--col-dark);
 }
 
-
-/* ACTION SECTION*/
-section.action {
+/* ACTION SIGNUP*/
+.action__signup {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem 7rem;
 }
 
-section.action div{
+.action__signup div {
   display: flex;
   background-color: var(--col-action);
-  border-radius:10px ;
+  border-radius: 10px;
   width: 70%;
   color: var(--col-secondary);
   padding: 0.5rem 1rem;
 }
 
-.action_signup{
+.action__signup--text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-}
-.action_signup p{
   color: var(--col-secondary);
   font-weight: bolder;
-  font-size:    larger;
-  margin: 0;
+  font-size: 25px;
 }
 
-p.action_detail{
-  font-size: small;
-  font-weight: initial;
+.action__signup--detail {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+/**************    Media queries ********************/
+
+/*Phones sizes*/
+@media screen and (max-width: 480px) {
+  
+
+  /* INFO SERVICES */
+  .information__services {
+    padding: 0;
+  }
+
+  .information__services > h3 {
+    padding: 20px;
+    font-size: 26px;
+  }
+  .services__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__cards article {
+    width: 80%;
+  }
+
+  /* QUOTE SECTION */
+  .quote {
+    padding: 10px;
+  }
+  .quote__text {
+    font-size: 20px;
+  }
+  .author {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ACTION SIGNUP */
+  .action__signup {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .action__signup div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action__signup--detail {
+    font-size: 12px;
+  }
+  .btn__action {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 5px 25px;
+  }
+}
+
+/*tablet sizes*/
+@media screen and (max-width: 768px) {
+  /* ACTION SIGNUP */
+  .action__signup {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .action__signup div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action__signup--text {
+    font-size: 20px;
+  }
+
+  .action__signup--detail {
+    font-size: 12px;
+  }
+  .btn__action {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 5px 25px;
+  }
 }
