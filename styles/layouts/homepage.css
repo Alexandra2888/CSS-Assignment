@@ -68,7 +68,6 @@
 
 .nav__link:hover,
 .nav__link:active {
-  color: inherit;
   background-color: var(--col-secondary);
   color: var(--col-dark);
 }
@@ -180,8 +179,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.action__signup--text {
   color: var(--col-secondary);
   font-weight: bolder;
   font-size: 25px;
@@ -202,4 +199,150 @@
   font-size: 1.4rem;
   color: var(--col-primary);
   text-align: center;
+}
+
+/**************    Media queries ********************/
+
+/*Phones sizes*/
+@media screen and (max-width: 480px) {
+  /* HEADER */
+  /* NAVIGATION */
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav__logo {
+    font-size: 26px;
+  }
+
+  .nav__links {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav__item {
+    margin: 10px 20px;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .hero__title {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 20px;
+    width: auto;
+  }
+  .main__title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .hero__img {
+    height: 220px;
+    width: auto;
+    padding-top: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 40px;
+    margin-top: 25px;
+  }
+
+  /* INFO SERVICES */
+  .information__services {
+    padding: 0;
+  }
+
+  .information__services > h3 {
+    padding: 20px;
+    font-size: 26px;
+  }
+  .services__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__cards article {
+    width: 80%;
+  }
+
+  /* QUOTE SECTION */
+  .quote {
+    padding: 10px;
+  }
+  .quote__text {
+    font-size: 20px;
+  }
+  .author {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ACTION SIGNUP */
+  .action__signup {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .action__signup div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action__signup--detail {
+    font-size: 12px;
+  }
+  .btn__action {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 5px 25px;
+  }
+}
+
+/*tablet sizes*/
+@media screen and (max-width: 768px) {
+  /* ACTION SIGNUP */
+  .action__signup {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .action__signup div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action__signup--text {
+    font-size: 20px;
+  }
+
+  .action__signup--detail {
+    font-size: 12px;
+  }
+  .btn__action {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 5px 25px;
+  }
+}
+
+/*screen sizes*/
+@media screen and (max-width: 1024px) {
 }
