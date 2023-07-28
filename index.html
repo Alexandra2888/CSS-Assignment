@@ -26,7 +26,7 @@
     <title>Css Assignment</title>
   </head>
   <body>
-    <header class="header">
+    <header class="hero">
       <nav class="nav">
         <h1 class="nav__logo">Cryptos</h1>
         <ul class="nav__links">
@@ -34,94 +34,91 @@
             <a class="nav__link" href="#section--1">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="pages/currencies/currencies.html">Cryptos</a>
+            <a class="nav__link" href="pages/currencies/currencies.html"
+              >Cryptos</a
+            >
           </li>
           <li class="nav__item">
             <a class="nav__link" href="./pages/news/news.html">News</a>
           </li>
         </ul>
       </nav>
-      <div class="header__title">
-        <div>
-          <h2>Welcome to cryptos</h2>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor
-            quia quibusdam doloremque,
-          </h5>
+      <div class="hero__section">
+        <div class="main__content">
+          <h2 class="main__title">Welcome to cryptos</h2>
+          <p class="main__para">
+            This application can provide educational resources, tutorials, and
+            guides to help users understand cryptocurrencies better.
+          </p>
           <button class="btn">Sign up</button>
         </div>
         <img
           src="images/crypto.jpg"
-          class="header__img"
-          alt="main header image"
+          class="hero__img"
+          alt="main header image" enter-class="hero__img" width="300px"
         />
       </div>
     </header>
     <main>
-      <section class="info">
+      <section class="information__services">
         <h3>Have an idea of our services</h3>
-        <div class="info_cards">
+        <div class="services__cards">
           <article>
             <img src="images/service1.png" width="64" alt="service 1" />
-            <h3>SERVICE I</h3>
+            <h3 class="service__title">Crypto News and Analysis</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              adipisci error repellendus aperiam quidem.
+              Access up-to-date news, articles, and market analysis related to
+              cryptocurrencies
             </p>
           </article>
           <article>
             <img src="images/service2.png" width="64" alt="service 2" />
-            <h3>SERVICE II</h3>
+            <h3 class="service__title">Real-Time Market Data</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              adipisci error repellendus aperiam quidem.
+              Access real-time cryptocurrency prices, market charts, and
+              historical data to stay informed
             </p>
           </article>
           <article>
             <img src="images/service3.png" width="64" alt="service 3" />
-            <h3>SERVICE III</h3>
+            <h3 class="service__title">Crypto Portfolio Management</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              adipisci error repellendus aperiam quidem.
+              Offer portfolio tracking tools, allowing users to monitor their
+              crypto investments
             </p>
           </article>
           <article>
             <img src="images/service4.png" width="64" alt="service 4" />
-            <h3>SERVICE IV</h3>
+            <h3 class="service__title">Cryptocurrency Wallet</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              adipisci error repellendus aperiam quidem.
+              The app can provide users with a secure and user-friendly digital
+              wallet to store.
             </p>
           </article>
         </div>
       </section>
       <section class="quote">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            inventore mollitia sequi dolore, cum velit illo sint ipsam eos
-            adipisci incidunt perferendis accusantium
-          </p>
-        </div>
-        <p class="author">Author</p>
+        <p class="quote__text">
+          "I think the fact that within the bitcoin universe an algorithm
+          replaces the functions of [the government]... is actually pretty
+          cool."
+        </p>
+        <p class="author">Al Gore</p>
       </section>
-      <section class="action">
+      <section class="action__signup">
         <div>
-          <div class="action_signup">
+          <div class="action__signup--text">
             <p>Call to action it's time!</p>
-            <p class="action_detail">
+            <p class="action__signup--detail">
               Sign up for our product by clicking that button right over there!
             </p>
           </div>
-          <button class="btn_action">Sign up</button>
+          <button class="btn__action">Sign up</button>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a class="footer__link" target="_blank" href="#">KreativStorm 2023</a>.
-      </p>
+      <p class="footer__copyright">&copy; Copyright by KreativStorm 2023.</p>
     </footer>
   </body>
 </html>
