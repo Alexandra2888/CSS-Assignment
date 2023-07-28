@@ -167,14 +167,14 @@ body {
 }
 
 /* TABLET (min-width: 768px) */
-@media screen and (min-width: var(--m-w)) {
+@media screen and (min-width: 768px) {
   .main__title {
     font-size: clamp(2rem, 3vw, 2.25rem);
   }
 }
 
 /* DESKTOP (min-width: 1024px) */
-@media screen and (min-width: var(--l-w)) {
+@media screen and (min-width: 1024px) {
   .main__title {
     font-size: clamp(3rem, 4vw, 3.5rem);
   }
