@@ -12,7 +12,8 @@
   cursor: pointer;
   color: slategray;
   border-radius: 8px;
-  box-shadow: rgba(48, 67, 150, 0.15) 0px 15px 25px, rgba(39, 37, 156, 0.05) 0px 5px 10px;
+  box-shadow: rgba(48, 67, 150, 0.15) 0px 15px 25px,
+    rgba(39, 37, 156, 0.05) 0px 5px 10px;
 }
 
 .news-article__main {
@@ -47,10 +48,8 @@
   font-style: italic;
   font-weight: 300;
   font-size: var(--fs-xsmall);
-  margin: 2em .5em .5em .5em;
+  margin: 2em 0.5em 0.5em 0.5em;
 }
-
-
 
 .news-input {
   display: flex;
@@ -59,13 +58,11 @@
   color: var(--col-dark);
 }
 
-
-
 .news-input select {
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
   font-size: var(--fs-xsmall);
-  background-color:#6a91e6;
+  background-color: #6a91e6;
   color: var(--col-secondary);
   border-radius: 6px;
   outline: none;
@@ -85,9 +82,6 @@
   background-color: var(--col-secondary);
 }
 
-
-
-
 img {
   height: auto;
   display: block;
@@ -96,18 +90,15 @@ img {
   margin: 1.5em auto;
 }
 
-
-
 .view__btn {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   color: var(--col-action);
   text-align: center;
   line-height: 1;
   font-size: 17px;
-  background-color : transparent;
+  background-color: transparent;
   padding: 10px;
- 
- 
+
   border-radius: 8px;
   background-color: var(--col-action);
   text-transform: capitalize;
@@ -116,12 +107,11 @@ img {
   letter-spacing: 0.5px;
 }
 
-
-.view__btn:hover, .view__btn:active {
+.view__btn:hover,
+.view__btn:active {
   color: var(--col-secondary);
   background-color: var(--col-action);
 }
-
 
 /*Media queries*/
 
@@ -129,8 +119,6 @@ img {
   .news-article {
     margin: 0.8em;
   }
-
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -158,5 +146,4 @@ img {
   .news-article:hover {
     transform: scale(1.1);
   }
-
 }

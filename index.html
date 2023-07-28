@@ -1,124 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="././styles/layouts/homepage.css" />
-    <title>Css Assignment</title>
-  </head>
-  <body>
-    <header class="hero">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="././styles/layouts/homepage.css" />
+  <title>Css Assignment</title>
+</head>
+
+<body>
+  <header class="hero">
+    <section class="hero__wrapper">
       <nav class="nav">
         <h1 class="nav__logo">Cryptos</h1>
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#section--1">Home</a>
+            <a class="nav__link nav__link--active" href="#">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="pages/currencies/currencies.html"
-              >Cryptos</a
-            >
+            <a class="nav__link" href="pages/currencies/currencies.html">Cryptos</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="./pages/news/news.html">News</a>
           </li>
         </ul>
       </nav>
+
       <div class="hero__section">
         <div class="main__content">
           <h2 class="main__title">Welcome to cryptos</h2>
           <p class="main__para">
-            This application can provide educational resources, tutorials, and
-            guides to help users understand cryptocurrencies better.
+            Welcome to Cryptos, your one-stop destination for all things cryptocurrencies. Explore the dynamic world
+            of digital assets, stay updated with real-time market data, and discover the latest trends shaping the
+            crypto landscape.
           </p>
-          <button class="btn">Sign up</button>
-        </div>
-        <img
-          src="images/crypto.jpg"
-          class="hero__img"
-          alt="main header image" enter-class="hero__img" width="300px"
-        />
-      </div>
-    </header>
-    <main>
-      <section class="information__services">
-        <h3>Have an idea of our services</h3>
-        <div class="services__cards">
-          <article>
-            <img src="images/service1.png" width="64" alt="service 1" />
-            <h3 class="service__title">Crypto News and Analysis</h3>
-            <p>
-              Access up-to-date news, articles, and market analysis related to
-              cryptocurrencies
-            </p>
-          </article>
-          <article>
-            <img src="images/service2.png" width="64" alt="service 2" />
-            <h3 class="service__title">Real-Time Market Data</h3>
-            <p>
-              Access real-time cryptocurrency prices, market charts, and
-              historical data to stay informed
-            </p>
-          </article>
-          <article>
-            <img src="images/service3.png" width="64" alt="service 3" />
-            <h3 class="service__title">Crypto Portfolio Management</h3>
-            <p>
-              Offer portfolio tracking tools, allowing users to monitor their
-              crypto investments
-            </p>
-          </article>
-          <article>
-            <img src="images/service4.png" width="64" alt="service 4" />
-            <h3 class="service__title">Cryptocurrency Wallet</h3>
-            <p>
-              The app can provide users with a secure and user-friendly digital
-              wallet to store.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="quote">
-        <p class="quote__text">
-          "I think the fact that within the bitcoin universe an algorithm
-          replaces the functions of [the government]... is actually pretty
-          cool."
-        </p>
-        <p class="author">Al Gore</p>
-      </section>
-      <section class="action__signup">
-        <div>
-          <div class="action__signup--text">
-            <p>Call to action it's time!</p>
-            <p class="action__signup--detail">
-              Sign up for our product by clicking that button right over there!
-            </p>
+          <div class="hero__section--btn-wrap">
+            <button class="btn btn__hero">Sign up</button>
           </div>
-          <button class="btn__action">Sign up</button>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <p class="footer__copyright">&copy; Copyright by KreativStorm 2023.</p>
-    </footer>
-  </body>
+        <div class="hero__image-container">
+          <img src="images/crypto.jpg" class="hero__img" alt="main header image" enter-class="hero__img"
+            width="300px" />
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="information__services">
+      <h3 class="information__services--title">Our services</h3>
+      <div class="services__cards">
+        <article class="services__card--article">
+          <img src="images/service1.png" width="90" alt="service 1" />
+          <h3 class="service__title">Crypto News and Analysis</h3>
+          <p>
+            Access up-to-date news, articles, and market analysis related to
+            cryptocurrencies
+          </p>
+        </article>
+        <article class="services__card--article">
+          <img src="images/service2.png" width="90" alt="service 2" />
+          <h3 class="service__title">Real-Time Market Data</h3>
+          <p>
+            Access real-time cryptocurrency prices, market charts, and
+            historical data to stay informed
+          </p>
+        </article>
+        <article class="services__card--article">
+          <img src="images/service3.png" width="90" alt="service 3" />
+          <h3 class="service__title">Crypto Portfolio Management</h3>
+          <p>
+            Offer portfolio tracking tools, allowing users to monitor their
+            crypto investments
+          </p>
+        </article>
+        <article class="services__card--article">
+          <img src="images/service4.png" width="90" alt="service 4" />
+          <h3 class="service__title">Cryptocurrency Wallet</h3>
+          <p>
+            The app can provide users with a secure and user-friendly digital
+            wallet to store.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote__wrapper">
+        <p class="quote__text">
+          "I've been an avid crypto investor for years, but ever since I started using
+          Cryptos, my trading game has reached new heights! The comprehensive stats
+          and real-time data provided by the platform are simply unmatched.
+          It's like having a crystal ball for the crypto market! Thanks to Cryptos,
+          I've made informed decisions and reaped incredible profits. Highly recommended
+          for anyone serious about their crypto journey!
+        </p>
+        <p class="quote__author"><strong>-John D., Crypto Enthusiast</strong></p>
+      </div>
+    </section>
+    <section class="action__signup">
+      <div class="action__signup--wrap">
+        <div class="action__signup--content">
+          <p class="action__signup--sub-header">Call to action it's time!</p>
+          <p class="action__signup--detail">
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <button class="btn__action btn__action-signup">Sign up</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; Copyright by KreativStorm 2023.</p>
+  </footer>
+
+</body>
+
 </html>
