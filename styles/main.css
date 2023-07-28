@@ -29,7 +29,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--col-primary);
   background-color: var(--col-secondary);
 }
 
