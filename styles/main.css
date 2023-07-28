@@ -34,6 +34,31 @@ body {
 }
 
 
+/* GENERAL ELEMENTS */
+
+
+.btn {
+  background-color: var(--col-action);
+  color:var(--col-secondary) ;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+
+.btn_action {
+  background-color: var(--col-action);
+  color:var(--col-secondary) ;
+  font-size: 1.5rem;
+  border: 3px solid var(--col-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px 0;
+  padding: 5px 35px;
+}
+
 
 /* NAVIGATION */
 .nav {
