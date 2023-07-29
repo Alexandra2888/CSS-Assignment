@@ -1,4 +1,4 @@
-/* Global styles for all articles */
+/* section news article */
 .news-article {
   display: flex;
   flex-direction: column;
@@ -50,6 +50,8 @@
   font-size: var(--fs-xsmall);
   margin: 2em 0.5em 0.5em 0.5em;
 }
+
+/* endsection news article */
 
 .news-input {
   display: flex;
@@ -113,14 +115,16 @@ img {
   background-color: var(--col-action);
 }
 
-/*Media queries*/
+/************** Media queries ********************/
 
+/* Tablet sizes */
 @media screen and (min-width: 768px) {
   .news-article {
     margin: 0.8em;
   }
 }
 
+/* Large tablet sizes */
 @media screen and (min-width: 1024px) {
   .news-section {
     max-width: 156.25rem;

@@ -37,7 +37,7 @@
   padding: .625rem .625rem .625rem 0;
   border-radius: 8px;
   text-align: left;
-  
+  padding-bottom: 20px;
 }
 
 .crypto__container--stats--title {
@@ -79,6 +79,14 @@
   margin:1.5625rem 0;
   width: 400px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.crypto__card:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease-out;
+  box-shadow: rgba(56, 130, 246, 1) 0px 0px 0px 2px, rgba(56, 130, 246, 0.65) 0px 4px 6px -1px, rgba(56, 130, 246, 0.08) 0px 1px 0px inset;
 }
 
 .crypto__card--top{
@@ -151,7 +159,9 @@ opacity: 0.5;
 /* endsection CRYPTO CARD */
 
 
-/* Mobile CSS (up to 480px) */
+/**************    Media queries ********************/
+
+/* Mobile styles */
 @media screen and (max-width: 480px) {
   .crypto__container--title {
     padding: 30px 15px;
@@ -163,6 +173,7 @@ opacity: 0.5;
   }
 }
 
+/* Large Mobile styles */
 @media screen and (max-width: 600px) {
   .crypto__main {
     margin: unset;
@@ -170,7 +181,7 @@ opacity: 0.5;
   }
 }
 
-
+/* Large Tablet styles */
 @media screen and (max-width: 1000px) {
   .global__crypto--container {
    flex-direction: column;
