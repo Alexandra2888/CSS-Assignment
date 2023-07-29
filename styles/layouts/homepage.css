@@ -43,6 +43,32 @@
 
 .btn__hero {
   width: fit-content;
+  position: relative;
+  overflow: hidden;
+  color: var(--col-primary);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn__hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--col-primary);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn__hero:hover::before {
+  width: 100%;
+}
+
+.btn__hero:hover {
+  color: #3882f6;
+  box-shadow: 0 0 10px var(--col-primary);
 }
 
 .main__content {
@@ -165,6 +191,7 @@
   align-items: center;
   justify-content: center;
   padding: 7rem;
+  padding-bottom: calc(7rem - 49px);
 }
 
 .action__signup--wrap {
@@ -187,6 +214,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--col-primary);
 }
 
 .action__signup--detail {

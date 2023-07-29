@@ -15,14 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="././styles/layouts/homepage.css" />
-  <title>Css Assignment</title>
+  <link rel="icon" type="image/png" href="./images/cryptos_logo.png">
+  <title>Cryptos</title>
 </head>
 
 <body>
   <header class="hero">
     <section class="hero__wrapper">
       <nav class="nav">
-        <h1 class="nav__logo">Cryptos</h1>
+        <a href="#" class="nav__logo">Cryptos</a>
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link nav__link--active" href="#">Home</a>
@@ -57,8 +58,7 @@
   </header>
 
   <main>
-
-    <section class="information__services">
+    <section class="information__services" id="top">
       <h3 class="information__services--title">Our services</h3>
       <div class="services__cards">
         <article class="services__card--article">
@@ -109,6 +109,7 @@
         <p class="quote__author"><strong>-John D., Crypto Enthusiast</strong></p>
       </div>
     </section>
+
     <section class="action__signup">
       <div class="action__signup--wrap">
         <div class="action__signup--content">
@@ -120,12 +121,20 @@
         <button class="btn__action btn__action-signup">Sign up</button>
       </div>
     </section>
+
   </main>
+
+  <!-- Back to top btn -->
+  <a id="back-to-top" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="50px"
+      height="50px" stroke="currentColor" class="w-6 h-6 back-to-top__arrow">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+    </svg>
+  </a>
 
   <footer class="footer">
     <p class="footer__copyright">&copy; Copyright by KreativStorm 2023.</p>
   </footer>
-
 </body>
 
 </html>

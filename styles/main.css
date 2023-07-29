@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--col-secondary);
+}
+
 :root {
   /*colors*/
   --col-dark: #1f2937;
@@ -14,22 +24,17 @@
   --col-secondary: #f9faf8;
   --col-action: #3882f6;
 
+  /* offsets */
+  --back-to-top-offset: 100px;
+
+  /* btn sizes */
+  --back-to-top-button-size: 2.8em;
+
   /*fonts*/
   --fs-xlarge: 3rem;
   --fs-medium: 2.25rem;
   --fs-small: 1.5rem;
   --fs-xsmall: 1.125rem;
-
-  /*Media queries viewport width*/
-  --xs-w: 480px;
-  --m-w: 768px;
-  --l-w: 1024px;
-  --xl-w: 1444px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--col-secondary);
 }
 
 /* GENERAL ELEMENTS */
@@ -65,6 +70,35 @@ body {
   opacity: 0.8;
 }
 
+.btn__action-signup {
+  position: relative;
+  overflow: hidden;
+  color: var(--col-primary);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn__action-signup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--col-primary);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn__action-signup:hover::before {
+  width: 100%;
+}
+
+.btn__action-signup:hover {
+  color: #3882f6;
+  box-shadow: 0 0 10px var(--col-primary);
+}
+
 /* HEADER */
 /* NAVIGATION */
 .nav {
@@ -78,6 +112,8 @@ body {
 .nav__logo {
   font-size: clamp(1.625rem, 3vw, 2.25rem);
   color: var(--col-primary);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .nav__links {
@@ -101,6 +137,57 @@ body {
   background-color: var(--col-secondary);
   color: var(--col-dark);
 }
+
+/* SECTION BACK TO TOP BUTTON */
+
+#back-to-top {
+  place-self: end;
+  position: sticky;
+  margin-top: calc(100vh + var(--back-to-top-offset));
+  bottom: 4em;
+  left: calc(100% - 5em);
+}
+
+#back-to-top {
+  min-width: var(--back-to-top-button-size);
+  height: var(--back-to-top-button-size);
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: var(--col-dark);
+  box-shadow: var(--col-primary) 0px 5px 15px;
+  transform: translateY(0%);
+  transition: ease-out 200ms;
+  transition-property: transform, background-color;
+  padding: 15px 8px;
+
+}
+
+.back-to-top__arrow {
+  color: var(--col-primary);
+  width: 36px;
+  position: relative;
+  top: 1em;
+}
+
+#back-to-top:hover {
+  transform: translateY(-22%);
+  background-color: var(--col-action);
+}
+
+#back-to-top::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 200%;
+  transform: translateY(-30%);
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+}
+
+/* ENDESCTION BACK TO TOP  */
+
 
 .nav__link {
   position: relative;
