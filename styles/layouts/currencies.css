@@ -44,37 +44,78 @@
   color: var(--col-dark);
 }
 
-.top__cryptocurrencies--container{
+.top__crypto-currencies--container{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
+  gap: 10px;
   align-items: center;
   justify-items: center;
   justify-content: space-evenly;
 }
 
+/* section CRYPTO CARD */
+
 .crypto__card {
   background-color: rgb(247, 247, 250);
-  border-radius: 1.25rem;
+  border-radius: 6px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: .9375rem;
   margin:1.5625rem 0;
-  width: 15.625rem;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.crypto__card--top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.crypto__card--top::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  opacity: 0.1;
+  bottom: -10px;
+  background: var(--col-dark);
+}
+
 .crypto__title {
   font-size: 1.875rem;		
-  color:rgb(14, 8, 8);
-  font-weight: bold;
-  margin: .625rem 0;
+  color:var(--col-dark);
+  padding: 1.5rem;
 }
-p {
 
+.crypto__card--main-content {
   font-size: var(--fs-xsmall);
   line-height: 1.3rem;
   color: rgb(17, 15, 15);
-  margin: auto;
+  padding-left: 10px;
 }
+
+.crypto__card--main{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.crypto__perc--success{
+  color: var(--col-success);
+}
+
+.crypto__perc--danger{
+  color: var(--col-danger);
+}
+
 .crypto__btn {
   font-size: 1.125rem;
   padding: .625rem 2.5rem;
@@ -86,12 +127,16 @@ p {
   background-color: var(--col-action);
   cursor: pointer;
 }
+
 .crypto__btn:hover {
 opacity: 0.5;
 }
+
 .crypto__image{
-  max-width: 100px;
+  width: clamp(40px, 100%, 50px);
 }
+
+/* endsection CRYPTO CARD */
 
 
 /* Mobile CSS (up to 480px) */
@@ -99,6 +144,12 @@ opacity: 0.5;
   .crypto__container--title {
     font-size: 1.375rem;
     margin: .625rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .crypto__main {
+    margin: unset;
   }
 }
  

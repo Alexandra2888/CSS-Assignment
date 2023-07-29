@@ -23,6 +23,8 @@ body {
   --col-primary: #e5e7eb;
   --col-secondary: #f9faf8;
   --col-action: #3882f6;
+  --col-success:#11d811;
+  --col-danger:#f00606;
 
   /* offsets */
   --back-to-top-offset: 100px;
@@ -309,5 +311,8 @@ body {
 @media screen and (max-width: 768px) {
   .nav__link:link {
     padding: 5px;
+  }
+  .hero__wrapper {
+    max-width: 100%;
   }
 }
