@@ -1,22 +1,104 @@
+.crypto__main{
+  margin: 40px;
+}
 .crypto__container {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.crypto__article {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: min-content;
-  margin: 2em;
-  padding: 1em;
-  text-align: left;
-  background-color: var(--col-secondary);
-  cursor: pointer;
-  border-radius: 8px;
-  color: black;
+  align-items: center;
+  justify-items: center;
 }
 
-.crypto__article__img {
-  width: 100px;
+.crypto__container--title {
+  font-size: 36px;
+  margin: 15px;
 }
+
+.globa__crypto--container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.globa__crypto--detail {
+  text-align: center;
+  width: 220px;
+  background-color: #fcfdfd;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.crypto__container--stats--title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--col-dark);
+}
+
+.globa__crypto--detail p {
+  font-size: 16px;
+  color: var(--col-dark);
+}
+
+.top__cryptocurrencies--container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.crypto__card {
+  background-color: rgb(247, 247, 250);
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+  margin:25px 0;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.crypto__title {
+  font-size: 30px;		
+  color:rgb(14, 8, 8);
+  font-weight: bold;
+  margin: 10px 0;
+}
+p {
+
+  font-size: 18px;
+  line-height: 1.3rem;
+  color: rgb(17, 15, 15);
+  margin: auto;
+}
+.crypto__btn {
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 15px;
+  color: white;
+  border: 0;
+  margin: 10px 0;
+  outline: none;
+  background-color: var(--col-action);
+  cursor: pointer;
+}
+.crypto__btn:hover {
+
+opacity: 0.5;}
+.crypto__image{
+  max-width: 100px;
+}
+
+
+/* Mobile CSS (up to 480px) */
+@media screen and (max-width: 480px) {
+  .crypto__container--title {
+    font-size: 22px;
+    margin: 10px;
+  }
+}
+ 
