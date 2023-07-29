@@ -31,7 +31,7 @@ Screenshot 2
 Screenshot 3
 
 Usage
-To view the website, simply open the index.html file in your web browser.
+To view the website, simply open https://alexandra2888.github.io/CSS-Assignment/pages/news/news.html.
 
 If you want to make any changes to the website or contribute to its development, follow these steps:
 
