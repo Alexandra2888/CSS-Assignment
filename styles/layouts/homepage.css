@@ -1,5 +1,12 @@
 /* HERO SECTION */
 
+.hero__container {
+  width: 100%;
+  background-color: var(--col-dark);
+  position: relative;
+  top: -2px;
+}
+
 .hero__section {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +15,9 @@
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: var(--col-primary);
   padding: 3em 0;
+  max-width: 70%;
+  margin: auto;
+  background-color: var(--col-dark);
 }
 
 .hero__image-container {

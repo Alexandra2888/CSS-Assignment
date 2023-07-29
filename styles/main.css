@@ -233,7 +233,7 @@ body {
   background: var(--col-dark);
 }
 
-.hero__wrapper {
+.header__wrapper {
   max-width: 70%;
   margin: auto;
   width: 100%;
@@ -243,7 +243,7 @@ body {
   padding-bottom: 0.2rem !important;
 }
 
-.hero {
+.header {
   padding: 0.1rem calc(1rem + 1vw) 2rem calc(1rem + 1vw);
   display: flex;
   flex-direction: row;
@@ -312,7 +312,7 @@ body {
   .nav__link:link {
     padding: 5px;
   }
-  .hero__wrapper {
+  .header__wrapper {
     max-width: 100%;
   }
 }
