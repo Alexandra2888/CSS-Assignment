@@ -24,6 +24,7 @@ User-friendly and responsive design for a seamless experience on both desktop an
 News about current happenings in cryptocurrency world.
 
 Screenshots
+
 Here are some screenshots of the website:
 
 
