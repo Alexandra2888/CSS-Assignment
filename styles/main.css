@@ -79,7 +79,8 @@ body {
 }
 
 .nav__logo {
-  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-size: 30px;
+  letter-spacing: 1.4px;
   color: var(--col-primary);
   text-decoration: none;
   font-weight: 600;
@@ -141,9 +142,9 @@ body {
   content: none;
 }
 
-.nav__logo {
+/* .nav__logo {
   font-size: clamp(1.625rem, 0.9107rem + 3.5714vw, 2.625rem);
-}
+} */
 
 .hero {
   background: var(--col-dark);
