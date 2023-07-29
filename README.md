@@ -28,7 +28,8 @@ Here are some screenshots of the website:
 
 Screenshot 1
 Screenshot 2
-Screenshot 3
+Screenshot 3![Alexandra2888 - Full - iPad - 29  07  2023  at 01 47 29 PM](https://github.com/Alexandra2888/CSS-Assignment/assets/67284999/5add5cfd-1be5-4600-88f0-b2afa2713010)
+
 
 Usage
 To view the website, simply open https://alexandra2888.github.io/CSS-Assignment/index.html.
