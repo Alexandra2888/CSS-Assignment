@@ -1,47 +1,57 @@
 .crypto__main{
-  margin: 2.5rem;
+  margin: auto;
+  max-width: 70%;
 }
+
+/* section GLOBAL CRYPTO */
+
 .crypto__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  align-items: flex-start;
+  padding: 40px 0px;
 }
 
 .crypto__container--title {
   font-size: var(--fs-medium);
-  margin: .935rem;
+  color: var(--col-dark);
+  padding: 2rem 0;
 }
 
 .global__crypto--container {
   display: flex;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
-  justify-content: space-evenly;
-  
+  justify-content: flex-start;
+}
+
+.global__crypto--group{
+  flex-grow: 0%;
+  flex-basis: 50%;
 }
 
 .global__crypto--detail {
   text-align: center;
   width: 13.75rem;
-  background-color: #fcfdfd;
-  padding: .625rem;
+  padding: .625rem .625rem .625rem 0;
   border-radius: 8px;
-  margin: 1.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  
 }
 
 .crypto__container--stats--title {
   font-size: var(--fs-xsmall);
   margin-bottom: 5px;
-  color: var(--col-dark);
+  color: rgb(122, 120, 120);
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 
 .global__crypto--detail p {
-  font-size: 1rem;
+  font-size: var(--fs-medium);
   color: var(--col-dark);
+  font-weight: 500;
 }
 
 .top__crypto-currencies--container{
@@ -53,6 +63,8 @@
   justify-items: center;
   justify-content: space-evenly;
 }
+
+/* endsection GLOBAL CRYPTO */
 
 /* section CRYPTO CARD */
 
@@ -142,14 +154,40 @@ opacity: 0.5;
 /* Mobile CSS (up to 480px) */
 @media screen and (max-width: 480px) {
   .crypto__container--title {
-    font-size: 1.375rem;
-    margin: .625rem;
+    padding: 30px 15px;
+  }
+
+  .top__crypto-currencies--container{
+    width: 95%;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
   .crypto__main {
     margin: unset;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .global__crypto--container {
+   flex-direction: column;
+  }
+
+  .global__crypto--group{
+    width: 100%;
+  }
+
+  .global__crypto--detail{
+    text-align: center;
+    width: 100%;
+  }
+
+  .crypto__container--title{
+    width: 100%;
+    text-align: center;
   }
 }
  
