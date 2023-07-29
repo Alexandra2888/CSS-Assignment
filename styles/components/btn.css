@@ -1,0 +1,67 @@
+.btn {
+  background-color: var(--col-action);
+  color: var(--col-secondary);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 500;
+  border: none;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  padding: 0.625rem calc(1.25rem + 1vw);
+  margin-top: 1.25rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn__action {
+  background-color: var(--col-action);
+  color: var(--col-secondary);
+  font-size: 1.3rem;
+  border: 3px solid var(--col-secondary);
+  border-radius: 0.625rem;
+  cursor: pointer;
+  margin: 2.5rem 0;
+  padding: 5px calc(1.25rem + 1vw);
+}
+
+.btn__action:hover {
+  opacity: 0.8;
+}
+
+.btn__action-signup {
+  position: relative;
+  overflow: hidden;
+  color: var(--col-primary);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn__action-signup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--col-primary);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn__action-signup:hover::before {
+  width: 100%;
+}
+
+.btn__action-signup:hover {
+  color: #3882f6;
+  box-shadow: 0 0 10px var(--col-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .btn__action {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 5px 25px;
+  }
+}
